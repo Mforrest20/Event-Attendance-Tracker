@@ -1,0 +1,2 @@
+To creat a MongoDB we input commands into the mongo shell CLI.
+The commnads used are stored in the mdbCommand.txt file
