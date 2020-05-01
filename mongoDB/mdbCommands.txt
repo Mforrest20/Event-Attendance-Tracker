@@ -1,1 +1,64 @@
 This is where the commands are stored:
+
+// command to insert data into the events collection
+db.events.insert({
+    eventName: 'Test Event1',
+    semester: 'spring',
+    year: '2020',
+    desc: 'test event',
+    startDate: Date(),
+    endDate: Date(),
+    meetFreq: 'daily',
+    startTime: '4:15pm',
+    endTime: '5:30pm'
+})
+
+// command to update the events table where eventName = '' and it adds a new record called students which is an array of
+// of objects. 
+db.events.update({ eventName: 'Test Event2'},
+    {
+        $set: { 
+            students: [
+                {
+                    pantherId: '123-123-1234',
+                    firstName: 'Squidward',
+                    lastName: 'Tennisballs',
+                    department: 'Computer Science',
+                    level: 'graduate',
+                    campus: 'main',
+                    degree: 'masters',
+                    email: 'squid@student.gsu.edu',
+                    college: 'College of arts and sciences',
+                    year: 2020,
+                    checkin: false
+                },
+                {
+                    pantherId: '444-444-1234',
+                    firstName: 'Ball',
+                    lastName: 'Sack',
+                    department: 'Computer Science',
+                    level: 'graduate',
+                    campus: 'permieter',
+                    degree: 'masters',
+                    email: 'balls@student.gsu.edu',
+                    college: 'College of arts and sciences',
+                    year: 2020,
+                    checkin: false
+                }
+            ]
+        }
+    }
+)
+
+// sample command of inserting a new event called 'Test Event2'
+db.events.insert({
+    eventName: 'Test Event2',
+    semester: 'fall',
+    year: '2021',
+    desc: 'test event 2',
+    startDate: Date(),
+    endDate: Date(),
+    meetFreq: 'daily',
+    startTime: '1:15pm',
+    endTime: '2:30pm'
+})
