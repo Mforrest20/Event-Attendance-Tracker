@@ -1,107 +1,118 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  background: whitesmoke;
-}
-
-h1{
-  padding: 20px;
-  text-transform: uppercase;
-  letter-spacing: 2px;
+.App {
   text-align: center;
 }
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
 }
 
-.list-container{
-
-  width: 400px;
-  max-height: 800px;
-  padding: 10px;
-  margin-left: 460px;
-
-}
-
-form{
-  padding: 10px;
-  margin-left: 560px;
-}
-
-input[type=text] {
-  height: 50px;
-  width: 40%;
-  padding: 10px 12px;
-  margin: 5px 15px;
-  margin-left: -60px;
-  box-sizing: border-box;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  border: 1px solid #404040;
-  font-size: 24px;
-}
-
-.list{
-  color: black;
-  margin-left: -30px;
-
-}
-
-li{
-  width: 400px;
-  height: 35px;
-  margin: 5px;
-  border: 2px dotted #404040;
-  text-decoration: none;
-  list-style: none;
-  padding: 5px;
-  float: left;
-  font-size: 24px;
-}
-
-.btn-delete{
-  float: right;
-  border: none;
-  height: 20px;
-  width: 35px;
-  background: #404040;
-  color: #ffffff !important;
-  text-align: center;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.btn-delete:hover{
-  color: #404040 !important;
-  font-weight: 700 !important;
-  letter-spacing: 3px;
-  background: rgba(255, 0, 0, 0.808);
-  transition: all 0.3s ease 0s;
-}
-
-.btn-add {
-  border: none;
-  background: #404040;
-  color: #ffffff !important;
-  font-weight: 100;
-  padding: 20px;
-  text-transform: uppercase;
-  border-radius: 6px;
-  display: inline-block;
-  transition: all 0.3s ease 0s;
-  cursor: pointer;
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
   }
+}
 
-  .btn-add:hover {
-    color: #404040 !important;
-    font-weight: 700 !important;
-    letter-spacing: 3px;
-    background: rgba(7, 182, 7, 0.63);
-    -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
-    -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
-    transition: all 0.3s ease 0s;
-    }
+.App-header {
+  background-color: #282c34;
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* form style */
+.form-style-6{
+	font: 95% Arial, Helvetica, sans-serif;
+	max-width: 400px;
+	margin: 10px auto;
+	padding: 16px;
+	background: #F7F7F7;
+}
+.form-style-6 h1{
+	background: #43D1AF;
+	padding: 20px 0;
+	font-size: 140%;
+	font-weight: 300;
+	text-align: center;
+	color: #fff;
+	margin: -16px -16px 16px -16px;
+}
+.form-style-6 input[type="text"],
+.form-style-6 input[type="date"],
+.form-style-6 input[type="datetime"],
+.form-style-6 input[type="email"],
+.form-style-6 input[type="number"],
+.form-style-6 input[type="search"],
+.form-style-6 input[type="time"],
+.form-style-6 input[type="url"],
+.form-style-6 textarea,
+.form-style-6 select 
+{
+	-webkit-transition: all 0.30s ease-in-out;
+	-moz-transition: all 0.30s ease-in-out;
+	-ms-transition: all 0.30s ease-in-out;
+	-o-transition: all 0.30s ease-in-out;
+	outline: none;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	width: 100%;
+	background: #fff;
+	margin-bottom: 4%;
+	border: 1px solid #ccc;
+	padding: 3%;
+	color: #555;
+	font: 95% Arial, Helvetica, sans-serif;
+}
+.form-style-6 input[type="text"]:focus,
+.form-style-6 input[type="date"]:focus,
+.form-style-6 input[type="datetime"]:focus,
+.form-style-6 input[type="email"]:focus,
+.form-style-6 input[type="number"]:focus,
+.form-style-6 input[type="search"]:focus,
+.form-style-6 input[type="time"]:focus,
+.form-style-6 input[type="url"]:focus,
+.form-style-6 textarea:focus,
+.form-style-6 select:focus
+{
+	box-shadow: 0 0 5px #43D1AF;
+	padding: 3%;
+	border: 1px solid #43D1AF;
+}
+
+.form-style-6 input[type="submit"],
+.form-style-6 input[type="button"]{
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	width: 100%;
+	padding: 3%;
+	background: #43D1AF;
+	border-bottom: 2px solid #30C29E;
+	border-top-style: none;
+	border-right-style: none;
+	border-left-style: none;	
+	color: #fff;
+}
+.form-style-6 input[type="submit"]:hover,
+.form-style-6 input[type="button"]:hover{
+	background: #2EBC99;
+}
+
