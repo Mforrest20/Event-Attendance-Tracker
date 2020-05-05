@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Events from './component/EventsList';
-import CreateEvent from './component/CreateEvent';
+import PopupEvent from './component/PopupEvent';
 import CheckIn from './component/CheckIn';
 
 
@@ -19,7 +19,7 @@ export default class App extends Component {
       <div className='App'>
         <h1>GSU.events</h1>
         <Events eventsLists={this.state.eventsLists}></Events>
-        <CreateEvent />
+        <PopupEvent />
         <CheckIn />
       </div>
     );
