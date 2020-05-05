@@ -1,4 +1,5 @@
 import React from 'react';
+import PopupLoad from './PopupLoad';
 class CreateEvent extends React.Component {
 
     state = { showForm: false }
@@ -35,17 +36,22 @@ class CreateEvent extends React.Component {
                     <label>End Time: </label>
                     <input type="time" ></input>
 
-                    <button>Create</button>
                 </form>
+                <PopupLoad />
             </div>
         );
     }
     render() { 
         return (
             <div className='create-event'>
+<<<<<<< HEAD
                 <h1>Create Event</h1>
+=======
+                <h1>GSU Events</h1>
+>>>>>>> 2cf6e037aaab9a3211fa5424b6c8d0e36e20012f
                 <button onClick={() => this.setState({ showForm: true })}>Create Event</button>
                 {this.state.showForm ? this.showForm() : null}
+
             </div>
         );
     }
