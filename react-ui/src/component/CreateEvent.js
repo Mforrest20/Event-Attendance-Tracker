@@ -39,7 +39,7 @@ class CreateEvent extends React.Component {
 
                 </form>
 				<PopupLoad />
-				</div>
+            </div>
 
             </div>
         );

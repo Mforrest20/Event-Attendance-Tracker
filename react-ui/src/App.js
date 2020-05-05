@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import Events from './component/EventsList';
 import PopupEvent from './component/PopupEvent';
-import CheckIn from './component/CheckIn';
-
+import ShowEvents from './component/ShowEvents';
+import ShowAttendees from './component/ShowAttendees';
 
 export default class App extends Component {
 
@@ -17,10 +17,14 @@ export default class App extends Component {
   render() {
     return (
       <div className='App'>
+
         <h1 className="hero-image">GSU Events</h1>
+
+        <h1>GSU Events</h1>
+
         <Events eventsLists={this.state.eventsLists}></Events>
         <PopupEvent />
-        <CheckIn />
+		<ShowEvents />
       </div>
     );
   }

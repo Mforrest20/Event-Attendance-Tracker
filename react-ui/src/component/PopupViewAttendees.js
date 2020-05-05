@@ -1,26 +1,24 @@
 import React, {Component} from 'react';
 import Popup from 'reactjs-popup';
-import Upload from "./Upload";
+import ShowAttendees from "./ShowAttendees";
 
-
-
-export default () => (
-	
-  <Popup trigger={<button className="button">CheckIn </button>} modal>
+export default (props) => (
+  <Popup trigger={<button className="button">Check In Attendees</button>} modal>
   {close => (
     <div className="modal">
       <a className="close" onClick={close}>
         &times;
       </a>
       <div className="actions">
-        <Upload />
+        <ShowAttendees eventID={props.eventID}/>
         <button
           className='button'
           onClick={() => {
             console.log("modal closed");
             close();
+			
           }}>
-            Cancel Upload
+            Back
         </button>
       </div>
     </div>
