@@ -60,10 +60,10 @@
 /* form style */
 .form-style-6{
 	font: 95% Arial, Helvetica, sans-serif;
-	max-width: 400px;
+	max-width: 300px;
 	margin: 10px auto;
 	padding: 16px;
-  background: #F7F7F7;
+  background: rgb(102, 165, 238);
   text-align: center;
 }
 .form-style-6 h1{
