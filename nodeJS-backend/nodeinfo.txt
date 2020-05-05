@@ -1,1 +1,8 @@
 This where we're going to store the back end code
+
+This applications requires the following dependencies:
+-express
+-bosy-parser
+-cors
+-mongoose
+-pm2
