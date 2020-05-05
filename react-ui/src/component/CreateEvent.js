@@ -44,11 +44,7 @@ class CreateEvent extends React.Component {
     render() { 
         return (
             <div className='create-event'>
-<<<<<<< HEAD
-                <h1>Create Event</h1>
-=======
                 <h1>GSU Events</h1>
->>>>>>> 2cf6e037aaab9a3211fa5424b6c8d0e36e20012f
                 <button onClick={() => this.setState({ showForm: true })}>Create Event</button>
                 {this.state.showForm ? this.showForm() : null}
 
