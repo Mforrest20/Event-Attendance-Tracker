@@ -17,7 +17,7 @@ export default class App extends Component {
   render() {
     return (
       <div className='App'>
-        <h1>GSU.events</h1>
+        <h1 className="hero-image">GSU Events</h1>
         <Events eventsLists={this.state.eventsLists}></Events>
         <PopupEvent />
         <CheckIn />
