@@ -40,10 +40,10 @@ class CreateEvent extends React.Component {
             </div>
         );
     }
-    render() {
+    render() { 
         return (
             <div className='create-event'>
-                <h1>Manage Application</h1>
+                <h1>Create Event</h1>
                 <button onClick={() => this.setState({ showForm: true })}>Create Event</button>
                 {this.state.showForm ? this.showForm() : null}
             </div>

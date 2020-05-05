@@ -43,7 +43,8 @@
 	max-width: 400px;
 	margin: 10px auto;
 	padding: 16px;
-	background: #F7F7F7;
+  background: #F7F7F7;
+  text-align: center;
 }
 .form-style-6 h1{
 	background: #43D1AF;
