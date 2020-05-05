@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Events from './component/EventsList';
 import CreateEvent from './component/CreateEvent';
+import CheckIn from './component/CheckIn';
 
 
 export default class App extends Component {
@@ -19,6 +20,7 @@ export default class App extends Component {
         <h1>GSU.events</h1>
         <Events eventsLists={this.state.eventsLists}></Events>
         <CreateEvent />
+        <CheckIn />
       </div>
     );
   }
