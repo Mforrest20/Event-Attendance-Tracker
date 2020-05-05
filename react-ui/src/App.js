@@ -1,26 +1,27 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react';
+import Events from './component/EventsList';
+import CreateEvent from './component/CreateEvent';
+import CheckIn from './component/CheckIn';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+export default class App extends Component {
+
+  state = {
+    'eventsLists': [
+      { 'name': 'GSU orientation 2020(vertual)', 'id': 0 },
+      { 'name': 'FreshMan orientation 2020', 'id': 1 },
+      { 'name': 'Study Group', 'id': 2 }
+    ]
+  }
+
+  render() {
+    return (
+      <div className='App'>
+        <h1>GSU.events</h1>
+        <Events eventsLists={this.state.eventsLists}></Events>
+        <CreateEvent />
+        <CheckIn />
+      </div>
+    );
+  }
 }
-
-export default App;
