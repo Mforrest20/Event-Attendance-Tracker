@@ -16,7 +16,7 @@ export default () => (
           onClick={() => {
             console.log("modal closed");
             close();
-			this.setState({ showForm: true })
+			// this.setState({ showForm: true })
           }}>
             Cancel Upload
         </button>
